@@ -31,7 +31,7 @@ Desafio de 100 dias da comunidade spacecoders. Este desafio não é apenas sobre
 
 ## Desafios para os 30 primeiros dias de código em Python. 
 
-#### 1	Imprima "Olá, mundo!" na tela.
+#### 1	Imprima Hello, World!" na tela.
 
 #### 2	Solicite o nome do usuário e imprima uma mensagem de boas-vindas.
  
