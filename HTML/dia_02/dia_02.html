@@ -1,0 +1,39 @@
+<!-- Dia 2 = Solicite o nome do usuário e imprima uma mensagem de boas-vindas. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dia 02</title>
+</head>
+<body>
+    <div id="txt">
+        <form id="formulario">
+            <label for="nomeInput">Digite seu nome:</label>
+            <input type="text" id="nomeInput" name="nome">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function checar() {
+            let divtxt = document.getElementById("txt")
+            let nome = document.getElementById("nomeInput").value
+            if (nome.length === 0) {
+                alert('Você precisa digitar seu nome!')
+            } else {
+                let nome_usuario = document.getElementById("nomeInput").value
+                divtxt.innerText = `Olá ${nome_usuario}, bem-vindo(a) é um prazer te conhecer!`
+            }
+        }
+
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault()
+            checar()
+        })
+        </script>
+</body>
+</html>
