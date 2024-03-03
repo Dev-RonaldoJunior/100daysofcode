@@ -1,0 +1,12 @@
+html, body {
+    background-color: rgb(122, 85, 221);    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#txt {
+    font-size: 15pt;
+    color: white;
+}

@@ -1,0 +1,32 @@
+<!-- Dia 4 = Faça um programa que solicite dois números ao usuário, some-os e imprima o resultado. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dia 04</title>
+</head>
+<body>
+    <div id="txt">
+        <input type="number" id="numero01"> + <input type="number" id="numero02"> <button onclick="substituir()">SOMAR</button>
+    </div>
+
+    <script>
+        function substituir() {
+            let numero01 = Number(document.querySelector("input#numero01").value)
+            let numero02 = Number(document.querySelector("input#numero02").value)
+            let soma = numero01 + numero02
+            let div = document.querySelector("div#txt")
+            div.innerHTML = `A soma dos valores ${numero01} + ${numero02} = ${soma} <button onclick="substituir2()">LIMPAR</button> `
+        }
+
+        function substituir2() {
+            let div = document.querySelector("div#txt")
+            div.innerHTML = `<input type="number" id="numero01"> + <input type="number" id="numero02"> <button onclick="substituir()">SOMAR</button>`
+        }
+    </script>
+</body>
+</html>
