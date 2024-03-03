@@ -1,0 +1,30 @@
+<!-- Dia 3 = Crie uma lista com alguns itens e imprima cada um deles. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dia 03</title>
+</head>
+<body>
+    <div id="txt"></div>
+
+    <script>
+        let divtxt = document.querySelector("div#txt")
+        let lista = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
+
+        function exibirComAtraso(item) {
+            if (item < lista.length) {
+                divtxt.innerHTML = lista[item]
+                setTimeout(function() {
+                    exibirComAtraso(item + 1)
+                }, 1000)
+            }
+        }
+        exibirComAtraso(0)
+    </script>
+</body>
+</html>
