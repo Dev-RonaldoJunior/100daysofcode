@@ -11,5 +11,4 @@ div#txt {
   text-align: center;
   font-size: 50pt;
   color: white;
-  additive-symbols: -moz-element();
 }
