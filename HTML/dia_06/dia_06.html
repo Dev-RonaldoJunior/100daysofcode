@@ -1,0 +1,29 @@
+<!-- Dia 6 = Crie um programa que determine se um número é par ou ímpar. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dia 06</title>
+</head>
+<body>
+    <div id="div01">
+        <p>Insira um número: </p> <input type="number" id="numero_01"> <button onclick="par_impar()">Ok</button>
+    </div>
+    <div id="div02"></div>
+    <script>
+        let resp = document.getElementById("div01")
+        let reset = document.getElementById("div02")
+        function par_impar(){
+            let valor = Number(document.getElementById("numero_01").value)
+            let resultado = valor === 0 ? 'Par (0 é considerado um número par)' : valor % 2 === 0 ? `O valor ${valor} é Par` : `O valor ${valor} é Ímpar`
+            
+            resp.innerHTML = `<p>${resultado}</p>`
+            reset.innerHTML = `<button onclick="location.reload()">Reset</button>`
+        }
+    </script>
+</body>
+</html>
