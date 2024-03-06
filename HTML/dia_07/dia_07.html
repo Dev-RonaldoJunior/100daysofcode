@@ -1,0 +1,34 @@
+<!-- Dia 7 = Escreva um loop que imprima os números de 1 a 10. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="htmlfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dia 07</title>
+</head>
+<body>
+    <div id="num">
+        <button onclick="start()">START</button>
+    </div>
+    <script>
+    let div = document.getElementById("num");
+
+    function start() {
+        let numero = 1;
+
+    function proxNumero() {
+        if (numero <= 10) {
+            div.innerHTML = numero;
+            numero++;
+            setTimeout(proxNumero, 1000)
+        }
+    }
+
+    proxNumero();
+    }
+    </script>
+</body>
+</html>
